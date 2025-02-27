@@ -1,0 +1,279 @@
+
+input[type="range"] {
+  width: 90%;
+  margin: 10px 0;
+  accent-color: #4CAF50;
+}
+
+.dark-mode {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.dark-mode .heading {
+  background-color: #333;
+  border-bottom-color: #666;
+}
+.dark-mode
+.dark-mode .sidebar button,
+.dark-mode .save-bttn button {
+  background-color: #444;
+  color: #fff;
+}
+
+.dark-mode input[type="range"] {
+  accent-color: #2dd333;
+}
+
+.heading {
+  z-index: 1000;
+}
+
+
+body, .heading {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+/* ----------------- Existing CSS ----------------- */
+
+
+
+.heading {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f0f0;
+  border-bottom: 0.7px solid rgb(108, 105, 105);
+  padding: 0px 19px;
+}
+
+.save-bttn {
+  margin: 0px 12px;
+}
+
+.save-bttn button {
+  padding: 9px 19px;
+  border-radius: 4px;
+  background: rgb(251, 248, 248);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: none;
+}
+
+.save-bttn button:hover {
+  background: rgba(154, 179, 180, 0.04);
+}
+
+main {
+  display: flex;
+}
+
+.container {
+  margin: 0px;
+  border-right: 0.7px solid rgb(108, 105, 105);
+  width: 240px;
+  min-height: 532px;
+  position: fixed;
+  top: 11%;
+  left: 0;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 8px;
+  min-height: 530px;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-top: 36px;
+}
+
+.save-bttn button:nth-child(3) {
+  background-color: #2dd333;
+}
+
+.save-bttn button:nth-child(3):hover {
+  background-color: #4c9f50;
+}
+
+.sidebar button {
+  margin-top: 16px;
+  border: none;
+  padding: 10px 13px;
+  border-radius: 5px;
+  background: rgb(252, 251, 251);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+.sidebar button:hover {
+  background-color: rgba(70, 155, 149, 0.1);
+}
+
+.sider-btn {
+  margin-top: 16px;
+  margin-left: 16px;
+  margin-right: 16px; 
+  display: flex;
+  flex-direction: column;
+}
+
+.main-body {
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+  width: 100%;
+} 
+
+#form-container {
+  display: flex;
+  height: auto;
+  margin-bottom: 20px;
+  width: 460px;
+  flex-direction: column;
+  border: 2px solid black;
+}
+
+#form-container {
+  min-height: 200px;
+  border: 1px dashed #ccc;
+  padding: 16px;
+  /* background-color: #fafafa; */
+}
+
+
+/* ////////// */
+
+
+
+
+
+.dark-mode #form-container{
+  min-height: 200px;
+  border: 1px dashed #f8f8f8;
+  padding: 16px;
+  background-color: #262525;
+}
+
+
+.form-element {
+  /* background-color: #f9f9f9; */
+  /* border: 1px solid #ddd; */
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  cursor: move; 
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.input-btn {
+  padding: 7px 13px;
+  margin: 6px;
+  width: 90%;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.form-control-group {
+  margin-bottom: 6px;
+}
+
+.text-btn {
+  border: 2px solid;
+  margin-left: 4px;
+  padding-left: 12px;
+  padding-top: 8px;
+  width: 415px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.select-box {
+  width: 96%;
+  margin: 0px 8px;
+  padding: 7px 13px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 6px;
+}
+
+input[type="checkbox"] {
+  margin-left: 20px;
+}
+
+.btn-opt {
+  margin-left: 10px;
+  margin-right: 140px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#copy-html-btn, .optioncreate {
+  padding: 6px 7px;
+  border-radius: 4px;
+  background: rgba(78, 223, 56, 0.776);
+  border: none;
+  color: rgba(35, 33, 33);
+}
+
+#copy-html-btn:hover, .optioncreate:hover {
+  background: #25a746;
+}
+
+#close-preview, .option-btn {
+  padding: 6px 7px;
+  background: rgba(225, 122, 27, 0.4);
+  border-radius: 4px;
+  border: none;
+}
+
+.option-del {
+  padding: 6px 7px;
+  background: rgba(226, 48, 48, 0.3);
+  border-radius: 4px;
+  border: none;
+}
+
+.option-del:hover {
+  background: rgba(186, 29, 29, 0.2);
+}
+
+#close-preview:hover, .option-btn:hover {
+  background: rgba(185, 114, 8, 0.2);
+}
+
+
+.dark-mode #preview-container{
+     background-color: #1a1a1a;
+
+}
+
+
+.dark-mode button{
+ border: 1ps solid rgb(214, 211, 211);
+ background-color: #434141;
+  color: white;
+}
+.dark-mode input {
+  background-color: #262525;
+  color: white;
+}
+.dark-mode select{
+  background-color: #262525;
+  color: white;
+}
+.dark-mode textarea{
+  background-color: #262525;
+  color: white;
+}
